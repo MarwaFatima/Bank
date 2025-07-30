@@ -1,0 +1,51 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+
+<div class="welcome-message">
+    <h3>Welcome to the Children's Bank of India!</h3>
+</div>
+
+<h1>CBI</h1>
+<h2>CHILDREN'S BANK OF INDIA</h2>
+
+<div class="image-grid">
+    <div class="image-card">
+        <a href="{% url 'create' %}">
+            <img src="{% static 'images/1.png' %}" alt="Create Account">
+            <p>Create Account</p>
+        </a>
+    </div>
+    <div class="image-card">
+        <a href="{% url 'pin' %}">
+            <img src="{% static 'images/2.png' %}" alt="Set PIN">
+            <p>Set PIN</p>
+        </a>
+    </div>
+    <div class="image-card">
+        <a href="{% url 'bal' %}">
+            <img src="{% static 'images/3.png' %}" alt="Check Balance">
+            <p>Balance</p>
+        </a>
+    </div>
+    <div class="image-card">
+        <a href="{% url 'deposit' %}">
+            <img src="{% static 'images/4.png' %}" alt="Deposit Money">
+            <p>Deposit</p>
+        </a>
+    </div>
+    <div class="image-card">
+        <a href="{% url 'withdrawl' %}">
+            <img src="{% static 'images/5.png' %}" alt="Withdraw Money">
+            <p>Withdraw</p>
+        </a>
+    </div>
+    <div class="image-card">
+        <a href="{% url 'transfer' %}">
+            <img src="{% static 'images/6.png' %}" alt="Transfer Money">
+            <p>Transfer</p>
+        </a>
+    </div>
+</div>
+
+{% endblock content %}

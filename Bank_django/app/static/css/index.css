@@ -1,0 +1,84 @@
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px;
+}
+
+#logo-container img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* Welcome message styling */
+.welcome-message {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* The rest of your image grid and card styling */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px 40px;
+}
+
+.image-card {
+    text-align: center;
+    width: 150px;
+}
+
+.image-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.image-card p {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2c3e50;
+   
+}
+a{
+     text-decoration: none;
+}

@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    ACCOUNT NUMBER 
+    <input type="number" name="acc" id=""><br>
+    PIN <input type="password" name="pin" id=""><br>
+    AMOUNT <input type="number" name="amt" id=""> <br>
+    <span class="error">{{ msg }}</span>
+    <br><br>
+    <button type="submit">DEPOSIT</button> <br>
+  
+</form>
+{% endblock content %}
